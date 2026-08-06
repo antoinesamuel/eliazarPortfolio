@@ -1,11 +1,22 @@
-import Image from "next/image";
-import HomeComponent from "./_pages/Home";
+"use client";
+import { useState } from "react";
 import Loader from "./_pages/Loader";
+import HomePage from "./_pages/HomePage";
+import Navigation from "./_Components/Navigation";
 
-export default function Home() {
+export default function MainPage() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black font-nohemi-regular">
-      <Loader />
-    </div>
+    <main className="relative min-h-screen bg-white">
+      {/* Affichage du loader */}
+      {isLoading && <Loader onComplete={() => setIsLoading(false)} />}
+
+      {/* Contenu de la page principal */}
+      <div className="w-full flex flex-col items-center justify-center">
+        <Navigation />
+        <HomePage />
+      </div>
+    </main>
   );
 }

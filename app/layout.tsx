@@ -1,31 +1,33 @@
-import type { Metadata } from "next";
-import LocalFont from "next/font/local";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const NohemiMedium = LocalFont({
+// Charger les polices locales depuis public/Fonts
+const nohemi = localFont({
+  src: "../public/Fonts/Nohemi/NohemiMedium.ttf", // Ajustez le nom exact du fichier ttf/woff2
   variable: "--font-nohemi-medium",
-  src: "../public/Fonts/Nohemi/NohemiMedium.ttf",
 });
 
-const NohemiRegular = LocalFont({
+const nohemiRegular = localFont({
+  src: "../public/Fonts/Nohemi/NohemiRegular.ttf", // Ajustez le chemin vers Delight
   variable: "--font-nohemi-regular",
-  src: "../public/Fonts/Nohemi/NohemiRegular.ttf",
+  display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "LAYEBE Eliazar",
-  description:
-    "LAYEBE Eliazar is a software engineer and web developer with a passion for creating innovative and user-friendly applications. With expertise in front-end and back-end development, Eliazar has a proven track record of delivering high-quality software solutions that meet the needs of clients and users alike.",
+export const metadata = {
+  title: "Layebe Eliazar - Portfolio",
+  description: "Junior Front dev based in Lome",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html
-      lang="en"
-      className={`${NohemiMedium.variable} ${NohemiRegular.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="fr" className={`${nohemi.variable} ${nohemiRegular.variable}`}>
+      <body className="bg-white text-black antialiased font-sans overflow-x-hidden">
+        {children}
+      </body>
     </html>
   );
 }
