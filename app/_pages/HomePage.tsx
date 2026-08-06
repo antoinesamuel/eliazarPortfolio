@@ -59,7 +59,10 @@ export default function HomePage() {
       <div className="md:hidden w-full flex flex-col items-start gap-4 py-6 hero-fade">
         <div className="">
           <p className="text-[1.25rem] flex items-center gap-1 ">
-            Hello <WavingEmoji />
+            Hello
+            <span className="">
+              <WavingEmoji />
+            </span>
             {""} i&apos;m
           </p>
           <h1 className="text-[6rem] tracking-tight leading-none font-nohemi-medium font-black">

@@ -1,37 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 eliazarPortfolio
 
-## Getting Started
+> A Minimalist Porfolio for **@eliazard**.
 
-First, run the development server:
+[![Stars](https://img.shields.io/github/stars/antoinesamuel/eliazarPortfolio?style=for-the-badge&logo=github&color=6366f1)](https://github.com/antoinesamuel/eliazarPortfolio)
+[![Forks](https://img.shields.io/github/forks/antoinesamuel/eliazarPortfolio?style=for-the-badge&logo=github&color=06b6d4)](https://github.com/antoinesamuel/eliazarPortfolio)
+[![DocuMind AI](https://img.shields.io/badge/Generated_by-DocuMind_AI-violet?style=for-the-badge&logo=openai)](https://documind-ai.com)
+
+---
+
+## 🚀 Vue d'ensemble du Projet
+
+**eliazarPortfolio** est un dépôt GitHub maintenu par **@antoinesamuel**. Cette documentation a été générée automatiquement par l'IA de **DocuMind AI** en analysant l'arborescence et la structure logicielle du dépôt.
+
+#Lien du depot de **DocuMind AI**
+https://github.com/Godwin-dot/Documind-ai
+
+### 📊 Statistiques du dépôt
+
+- **Langages principaux:** TypeScript (96%), JavaScript (1.9%), CSS (1.6%)
+- **Fichiers détectés:** 28 fichiers dans 8 dossiers
+- **Branche principale:** `main`
+- **Étoiles GitHub:** ⭐ 4 820
+- **Forks:** 🔀 610
+
+---
+
+## 🛠️ Architecture & Structure du Code
+
+Voici l'arborescence clé identifiée au sein du projet :
+
+```bash
+eliazarPortfolio/
+├── 📁 src/                 # Code source principal de l'application
+│   ├── 📁 components/     # Composants UI réutilisables
+│   ├── 📁 hooks/          # Custom React Hooks & State management
+│   └── 📁 lib/            # Modules utilitaires et API client
+├── 📁 public/              # Assets statiques (images, favicons, fonts)
+├── 📄 package.json         # Dépendances & scripts de configuration
+└── 📄 README.md            # Documentation générée
+```
+
+---
+
+## ⚡ Installation & Démarrage Rapide
+
+### 1. Prérequis
+
+- **Node.js** `>= 18.0.0` (ou runtime adapté au projet)
+- **Git** installé sur votre machine
+- Gestionnaire de paquets (`npm`, `yarn` ou `pnpm`)
+
+### 2. Cloner le dépôt
+
+```bash
+git clone https://github.com/antoinesamuel/eliazarPortfolio.git
+cd eliazarPortfolio
+```
+
+### 3. Installer les dépendances
+
+```bash
+npm install
+```
+
+### 4. Lancer l'environnement de développement
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+
+<!-- Image stockée localement dans votre projet -->
+
+#Version Mobile
+![Capture d'écran](./public/images/Mobile.png)
+#Version Desktop
+![Capture d'écran](./public/images/Desktop.png)
+
+_Documentation générée en 1.8s avec ⚡ DocuMind AI Engine_
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# eliazarPortfolio" 
