@@ -1,23 +1,32 @@
 @import "tailwindcss";
 @plugin "daisyui";
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  box-sizing: inherit;
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
 @theme {
+  --font-nohemi-medium: "Nohemi Medium", sans-serif;
+  --font-nohemi-regular: "Nohemi Regular", sans-serif;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+
+@utility components {
+  .container {
+    @apply mx-auto px-4;
+  }
 }

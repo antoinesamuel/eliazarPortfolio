@@ -1,11 +1,9 @@
-import Image from "next/image";
-import HomeComponent from "./_pages/Home";
-import Loader from "./_pages/Loader";
-
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black font-nohemi-regular">
-      <Loader />
+      <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
+        <h1 className="text-9xl font-extrabold">Life is Good</h1>
+      </main>
     </div>
   );
 }
