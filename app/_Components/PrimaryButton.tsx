@@ -40,10 +40,10 @@ export default function PrimaryButton({
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`inline-flex items-center justify-center gap-3 px-6 py-3 bg-black text-white rounded-full font-montserrat text-sm font-medium tracking-wide transition-all duration-300 hover:bg-gray-800 hover:shadow-lg active:scale-95 cursor-pointer select-none ${className}`}
+      className={`flex items-center justify-center gap-3 p-6 bg-black text-white rounded-full font-montserrat text-[1.25rem] font-nohemi-regular tracking-wide transition-all duration-300 hover:bg-gray-800 hover:shadow-lg active:scale-95 cursor-pointer select-none ${className}`}
     >
       <span>{label}</span>
-      <div ref={iconRef} className="inline-flex items-center justify-center">
+      <div ref={iconRef} className="flex items-center justify-center">
         <FontAwesomeIcon icon={faArrowRight} className="w-3.5 h-3.5" />
       </div>
     </div>

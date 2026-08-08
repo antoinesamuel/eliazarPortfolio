@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import profil from "@/app/Icon.svg";
+import NavLink from "./NavLink";
 
 const navLinks = [
   { number: "01", label: "Home", href: "#home" },
@@ -70,20 +71,15 @@ export default function Navigation() {
     <>
       {/* Header Desktop */}
       <header className="w-full flex items-center justify-between p-6 md:p-10 max-w-7xl mx-auto font-nohemi-regular">
-        <div className="w-20 h-20 rounded-full overflow-hidden relative border border-gray-200">
-          <Image src={profil} alt="Logo" fill className="object-cover" />
+        <div className="avatar avatar-online">
+          <div className="w-20 rounded-full">
+            <Image src={profil} alt="Profile" />
+          </div>
         </div>
-
         <nav className="hidden md:flex items-center gap-8 text-[2rem] font-nohemi-regular tracking-tight font-light">
-          <a href="/About" className="hover:opacity-60 transition-opacity">
-            About
-          </a>
-          <a href="/Projects" className="hover:opacity-60 transition-opacity">
-            Projets
-          </a>
-          <a href="/Contacts" className="hover:opacity-60 transition-opacity">
-            Contacts
-          </a>
+          <NavLink href="/About" label="About" />
+          <NavLink href="/Projects" label="Projects" />
+          <NavLink href="/contact" label="Contact" />
         </nav>
       </header>
 
@@ -108,10 +104,12 @@ export default function Navigation() {
       {/* Overlay Menu */}
       <div
         ref={menuRef}
-        className="fixed inset-0 z-40 w-full h-dvh bg-white text-black flex flex-col justify-between p-8 md:hidden -translate-y-full"
+        className="fixed inset-0 mb-10 z-40 w-full bg-white text-black flex flex-col justify-between p-8 md:hidden -translate-y-full"
       >
         <div className="flex justify-between items-center pt-2">
-          <span className="text-[1.5rem] font-light">{"</dev>"}</span>
+          <span className="text-[1.5rem] font-light font-nohemi-regular">
+            {"</Eliazar>"}
+          </span>
         </div>
 
         <div className="flex flex-col gap-6 my-auto font-nohemi-regular">
@@ -125,7 +123,7 @@ export default function Navigation() {
               <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center text-[1rem] text-black group-hover:bg-black group-hover:text-white transition-colors">
                 {item.number}
               </div>
-              <span className="text-[2.25rem] font-light tracking-tight uppercase transition-colors font-nohemi-medium group-hover:text-black">
+              <span className="text-[2.25rem] font-light tracking-tight uppercase transition-colors font-nohemi-medium group-hover:text-black hover:cursor-pointer">
                 {item.label}
               </span>
             </a>
