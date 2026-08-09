@@ -87,7 +87,8 @@ export default function RootLayout({
   return (
     <html
       lang="fr" // Passage de l'anglais au français pour correspondre au contenu de ton portfolio
-      className={`${montserrat.variable} ${nohemi.variable} ${nohemiRegular.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${nohemi.variable} ${nohemiRegular.variable} h-full antialiased`
+      }
     >
       <body className="min-h-full flex flex-col portfolio-bg">{children}</body>
     </html>

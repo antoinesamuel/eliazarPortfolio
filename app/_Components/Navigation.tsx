@@ -109,7 +109,7 @@ export default function Navigation() {
       {/* Overlay Menu */}
       <div
         ref={menuRef}
-        className="fixed inset-0 mb-10 z-40 w-full bg-black text-white flex flex-col justify-between p-8 md:hidden -translate-y-full"
+        className="fixed inset-0 z-40 w-full bg-black text-white flex flex-col justify-between p-8 md:hidden -translate-y-full"
       >
         <div className="flex justify-between items-center pt-2">
           <span className="text-[1.5rem] font-light font-nohemi-regular">
