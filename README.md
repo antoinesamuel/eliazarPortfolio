@@ -41,4 +41,11 @@ eliazarPortfolio/
 
 ### Version Desktop
 
-![Capture d'écran](/public/Images/image.png)
+![Capture d'écran](/public/Images/first.png)
+![Capture d'écran](/public/Images/second.png)
+![Capture d'écran](/public/Images/third.png)
+![Capture d'écran](/public/Images/fourth.png)
+![Capture d'écran](/public/Images/five.png)
+![Capture d'écran](/public/Images/six.png)
+![Capture d'écran](/public/Images/seven.png)
+

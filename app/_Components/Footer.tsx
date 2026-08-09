@@ -6,7 +6,7 @@ import avatar from "@/app/favicon.ico";
 
 export function Footer() {
   return (
-    <footer className="w-full max-w-5xl h-[35vh] mx-auto px-4 py-8">
+    <footer className="w-full h-[45vh] overflow-hidden mx-auto px-4 py-8">
       {/* Ligne de séparation supérieure */}
       <hr className="border-t border-gray-700 mb-6 w-full" />
       <div className="flex justify-between items-center p-4">
@@ -70,6 +70,9 @@ export function Footer() {
             </span>
           </a>
         </div>
+      </div>
+      <div className="">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.412397388732!2d1.18141907291441!3d6.2092121267401135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1021584125c0882f%3A0x11e8cba601416cf4!2sESGIS%20Annexe%20Avedji!5e0!3m2!1sfr!2stg!4v1786297098431!5m2!1sfr!2stg"  allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
       </div>
     </footer>
   );

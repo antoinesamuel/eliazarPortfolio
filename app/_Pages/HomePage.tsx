@@ -89,7 +89,7 @@ export default function HomePage() {
           {/* Description Paragraph */}
           <p
             ref={descRef}
-            className="text-zinc-400 text-[1rem] sm:text-base md:text-[1.5rem] leading-relaxed max-w-xl font-normal font-Montserrat"
+            className="text-zinc-400 text-[1rem] md:text-[1.5rem] leading-relaxed max-w-xl font-normal font-Montserrat"
           >
             Étudiant en Licence Informatique spécialisé en Sécurité
             Informatique, expérimenté en développement Full–Stack freelance et

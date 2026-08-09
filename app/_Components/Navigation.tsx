@@ -9,9 +9,9 @@ import PrimaryButton from "./PrimaryButton";
 
 const navLinks = [
   { number: "01", label: "Home", href: "#home" },
-  { number: "02", label: "About", href: "#about" },
-  { number: "03", label: "Projects", href: "#projects" },
-  { number: "04", label: "Contacts", href: "#contacts" },
+  { number: "02", label: "About", href: "#About" },
+  { number: "03", label: "Projects", href: "#Projects" },
+  { number: "04", label: "Contacts", href: "#Contacts" },
 ];
 
 export default function Navigation() {
