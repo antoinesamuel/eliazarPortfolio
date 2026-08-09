@@ -99,6 +99,7 @@ export default function AboutSection() {
     <section
       ref={sectionRef}
       className="w-full py-24 px-6 md:px-16 lg:px-24 font-nohemi-regular selection:bg-black text-white"
+      id="About"
     >
       <div className="max-w-7xl mx-auto">
         {/* EN-TÊTE : Titre massif & Intro */}

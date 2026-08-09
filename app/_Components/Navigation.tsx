@@ -81,9 +81,9 @@ export default function Navigation() {
         </div>
         <nav className="hidden md:flex items-center gap-8 text-[2rem] font-nohemi-regular tracking-tight font-light">
           <NavLink href="/" label="Accueil" />
-          <NavLink href="/About" label="About" />
-          <NavLink href="/Projects" label="Projects" />
-          <NavLink href="/contacts" label="Contacts" />
+          <NavLink href="#About" label="About" />
+          <NavLink href="#Projects" label="Projects" />
+          <NavLink href="#Contacts" label="Contacts" />
           <PrimaryButton label="Contacter Moi" className="rounded-full" />
         </nav>
       </header>

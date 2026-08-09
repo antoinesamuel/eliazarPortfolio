@@ -4,6 +4,7 @@ import Loader from "./_Pages/Loader";
 import Navigation from "./_Components/Navigation";
 import HomePage from "./_Pages/HomePage";
 import AboutSection from "./_Pages/AboutSection";
+import Footer from "./_Components/Footer";
 
 export default function MainPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,6 +19,7 @@ export default function MainPage() {
         <Navigation />
         <HomePage />
         <AboutSection />
+        <Footer />
       </div>
     </main>
   );
