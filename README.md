@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 eliazarPortfolio
 
-## Getting Started
+> A Minimalist Portfolio for **@eliazard**.
 
-First, run the development server:
+## 🚀 Vue d'ensemble du Projet
+
+**eliazarPortfolio** est un dépôt GitHub maintenu par **@antoinesamuel**. Cette documentation a été générée automatiquement par l'IA de **DocuMind AI** en analysant l'arborescence et la structure logicielle du dépôt.
+
+### 🔗 Lien du dépôt DocuMind AI
+
+[DocuMind AI](https://github.com/Godwin-dot/Documind-ai)
+
+### 📊 Statistiques du dépôt
+
+- **Langages principaux:** TypeScript (96%), JavaScript (1.9%), CSS (1.6%)
+- **Fichiers détectés:** 28 fichiers dans 8 dossiers
+- **Branche principale:** `main`
+- **Étoiles GitHub:** ⭐ 4 820
+- **Forks:** 🔀 610
+
+---
+
+## 🛠️ Architecture & Structure du Code
+
+Voici l'arborescence clé identifiée au sein du projet :
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+eliazarPortfolio/
+├── 📁 app/                 # Code source principal de l'application
+│   ├── 📁 _Components/     # Composants UI réutilisables
+│   ├── 📁 _Pages/          # Custom React Hooks & State
+├── 📁 public/
+│   ├── 📁 Fonts/     # Composants UI réutilisables
+│   ├── 📁 Images/
+           # Assets statiques (images, favicons, fonts)
+├── 📄 package.json         # Dépendances & scripts de configuration
+└── 📄 README.md            # Documentation générée
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- Image stockée localement dans votre projet -->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Version Desktop
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Capture d'écran](/public/Images/image.png)
