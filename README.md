@@ -13,10 +13,9 @@
 ### 📊 Statistiques du dépôt
 
 - **Langages principaux:** TypeScript (96%), JavaScript (1.9%), CSS (1.6%)
-- **Fichiers détectés:** 28 fichiers dans 8 dossiers
 - **Branche principale:** `main`
-- **Étoiles GitHub:** ⭐ 4 820
-- **Forks:** 🔀 610
+- **Étoiles GitHub:** ⭐ 0
+- **Forks:** 🔀 0
 
 ---
 

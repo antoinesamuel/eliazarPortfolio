@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     "Génie Logiciel",
     "Togo"
   ],
-  authors: [{ name: "Eliazar" }],
-  creator: "Eliazar",
-  publisher: "Eliazar",
+  authors: [{ name: "LAYEBE Eliazar" }],
+  creator: "KONKA Kokou Antoine Samuel",
+  publisher: "LAYEBE Eliazar",
   robots: {
     index: true,
     follow: true,
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://eliazar-portfolio-two.vercel.app/", // Remplace par ton URL finale une fois déployé
-    title: "Eliazar | Développeur Full-Stack Junior",
+    title: "LAYEBE Eliazar | Développeur Full-Stack Junior",
     description: "Découvrez mon portfolio, mes projets web et mon expertise technique en développement front-end et back-end.",
     siteName: "Eliazar Portfolio",
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   // Aperçu Twitter / X
   twitter: {
     card: "summary_large_image",
-    title: "Eliazar | Développeur Full-Stack Junior",
+    title: "LAYEBE Eliazar | Développeur Full-Stack Junior",
     description: "Découvrez mon portfolio et mes réalisations en développement web.",
     images: ["https://eliazar-portfolio-two.vercel.app/Images/first.png"],
   },
