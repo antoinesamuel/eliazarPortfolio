@@ -102,7 +102,9 @@ export default function HomePage() {
             ref={buttonsRef}
             className="flex flex-wrap items-center gap-3 pt-4"
           >
+            {/*
             <PrimaryButton label="Projets" />
+            */}
             <PrimaryButton label="Me Connecter" />
             <PrimaryButton label="Mon CV" />
           </div>
