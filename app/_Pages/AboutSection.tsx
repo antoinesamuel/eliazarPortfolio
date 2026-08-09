@@ -114,12 +114,12 @@ export default function AboutSection() {
           </div>
 
           <div ref={introRef} className="flex flex-col justify-center max-w-xl">
-            <h2 className="text-3xl font-bold mb-6">Hola 👋</h2>
+            <h2 className="text-3xl font-bold mb-6">Salut 👋</h2>
             <p className="text-[1.5rem]  text-gray-800 leading-relaxed font-medium">
               Lorem ipsum dolor sit amet consectetur. Ipsum tincidunt morbi
-              sapien tristique facilisi at dolor integer in. Feugiat commodo
+              sapien tristique facilisi <span className="text-red-600">at dolor</span> integer in. Feugiat commodo
               tellus nisi egestas eget gravida pellentesque. Quis ipsum tempor
-              praesent euismod. Nulla molestie rutrum quisque libero lorem.
+              praesent euismod. <span className="text-green-500">at dolor</span> rutrum quisque libero lorem.
               Lorem elit sit dolor eget sed velit nunc libero.
             </p>
           </div>
