@@ -213,7 +213,7 @@ export default function AboutSection() {
                   Licence Professionnelle en Génie Logiciel
                 </h4>
                 <p className="text-gray-700 text-[1.5rem]  leading-relaxed">
-                  Cours à l{"'"}
+                  en cours à l{"'"}
                   <span className="">
                     <a href="https://www.esgis.org/" className="text-[#E67900]">
                       <Image
