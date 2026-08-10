@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import image from "@/public/Images/Five.png"
+import image from "@/public/Images/Five.png";
 
 // Charger les polices locales depuis public/Fonts
 const nohemi = localFont({
@@ -27,17 +27,18 @@ export const metadata: Metadata = {
     default: "Eliazar | Développeur Full-Stack Junior",
     template: "%s | Eliazar Portfolio",
   },
-  description: "Portfolio officiel d'Eliazar, développeur Full-Stack spécialisé en React, Next.js, et Spring Boot. Découvrez mes projets web et mon parcours en génie logiciel.",
+  description:
+    "Portfolio officiel d'Eliazar, développeur Full-Stack spécialisé en React, Next.js, et Spring Boot. Découvrez mes projets web et mon parcours en génie logiciel.",
   keywords: [
-    "Développeur Full-Stack", 
-    "React", 
-    "Next.js", 
-    "Spring Boot", 
-    "TypeScript", 
-    "Tailwind CSS", 
-    "Portfolio", 
+    "Développeur Full-Stack",
+    "React",
+    "Next.js",
+    "Spring Boot",
+    "TypeScript",
+    "Tailwind CSS",
+    "Portfolio",
     "Génie Logiciel",
-    "Togo"
+    "Togo",
   ],
   authors: [{ name: "LAYEBE Eliazar" }],
   creator: "KONKA Kokou Antoine Samuel",
@@ -59,12 +60,13 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "https://eliazar-portfolio-two.vercel.app/", // Remplace par ton URL finale une fois déployé
     title: "LAYEBE Eliazar | Développeur Full-Stack Junior",
-    description: "Découvrez mon portfolio, mes projets web et mon expertise technique en développement front-end et back-end.",
+    description:
+      "Découvrez mon portfolio, mes projets web et mon expertise technique en développement front-end et back-end.",
     siteName: "Eliazar Portfolio",
     images: [
       {
-        url:"https://eliazar-portfolio-two.vercel.app/Images/first.png", // Ajoute une image d'aperçu de 1200x630px dans ton dossier public
-        width:1920,
+        url: "https://eliazar-portfolio-two.vercel.app/Images/first.png", // Ajoute une image d'aperçu de 1200x630px dans ton dossier public
+        width: 1920,
         height: 1080,
         alt: "Eliazar - Développeur Full-Stack Portfolio",
       },
@@ -74,8 +76,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "LAYEBE Eliazar | Développeur Full-Stack Junior",
-    description: "Découvrez mon portfolio et mes réalisations en développement web.",
+    description:
+      "Découvrez mon portfolio et mes réalisations en développement web.",
     images: ["https://eliazar-portfolio-two.vercel.app/Images/first.png"],
+  },
+  icons: {
+    icon: "./Philippos.jpg",
   },
 };
 
@@ -87,8 +93,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr" // Passage de l'anglais au français pour correspondre au contenu de ton portfolio
-      className={`${montserrat.variable} ${nohemi.variable} ${nohemiRegular.variable} h-full antialiased`
-      }
+      className={`${montserrat.variable} ${nohemi.variable} ${nohemiRegular.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col portfolio-bg">{children}</body>
     </html>

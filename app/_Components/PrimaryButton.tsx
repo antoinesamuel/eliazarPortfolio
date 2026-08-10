@@ -50,7 +50,7 @@ export default function PrimaryButton({
   );
 
   return (
-    <a href="/Resume" className="inline-block">
+    <a href={href} className="inline-block">
       {content}
     </a>
   );

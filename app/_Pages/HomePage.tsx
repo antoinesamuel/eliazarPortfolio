@@ -78,24 +78,12 @@ export default function HomePage() {
           {/* Subtitle / Role */}
           <div
             ref={subtitleRef}
-            className="flex items-center space-x-2 text-lg sm:text-xl font-bold text-white pt-2"
+            className="flex items-center space-x-2 text-[2rem] font-bold text-white pt-2"
           >
-            <span className="text-zinc-400"></span>
             <h2>
               Etudiant en <span className="text-red-500">Genie Logiciel</span>
             </h2>
           </div>
-
-          {/* Description Paragraph */}
-          <p
-            ref={descRef}
-            className="text-zinc-400 text-[1rem] md:text-[1.5rem] leading-relaxed max-w-xl font-normal font-Montserrat"
-          >
-            Étudiant en Licence Informatique spécialisé en Sécurité
-            Informatique, expérimenté en développement Full–Stack freelance et
-            en IA &amp; Prompt Engineering. Je construis des solutions
-            numériques qui allient performance, sécurité et innovation.
-          </p>
 
           {/* Action Buttons */}
           <div
@@ -105,8 +93,11 @@ export default function HomePage() {
             {/*
             <PrimaryButton label="Projets" />
             */}
-            <PrimaryButton label="Me Connecter" />
-            <PrimaryButton label="Mon CV" />
+            <PrimaryButton label="Me Connecter" href="#Contacts" />
+            <PrimaryButton
+              label="Mon CV"
+              href="https://drive.google.com/file/d/1UJBQG5gwlgzFYSxm7wVazmWcxwiwEcMB/view"
+            />
           </div>
         </div>
 
@@ -125,11 +116,11 @@ export default function HomePage() {
             {/* Speech Bubble "Hello world" */}
             <div
               ref={bubbleRef}
-              className="absolute font-Montserrat top-4 left-6 sm:left-12 bg-white text-black text-sm sm:text-base font-extrabold px-5 py-2 rounded-full shadow-lg z-20 flex items-center justify-center"
+              className="absolute top-4 left-6 sm:left-12 bg-white text-black text-[1rem] font-light px-5 py-2 rounded-full shadow-lg z-20 flex items-center justify-center"
             >
               Hello world
               {/* Bubble Tail */}
-              <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-white" />
+              <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-10 border-t-white" />
             </div>
           </div>
         </div>

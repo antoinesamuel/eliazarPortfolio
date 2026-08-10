@@ -27,7 +27,7 @@ export function Footer() {
         <div className="flex gap-6 md:gap-8">
           {/* Bouton Gmail */}
           <a
-            href="mailto:votre-email@gmail.com"
+            href="mailto:elilayebe@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 group hover:-translate-y-1 transition-transform duration-300"
@@ -57,7 +57,7 @@ export function Footer() {
 
           {/* Bouton WhatsApp */}
           <a
-            href="https://wa.me/012345678"
+            href="https://wa.me/+22870126138"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 group hover:-translate-y-1 transition-transform duration-300"
@@ -72,7 +72,13 @@ export function Footer() {
         </div>
       </div>
       <div className="">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.412397388732!2d1.18141907291441!3d6.2092121267401135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1021584125c0882f%3A0x11e8cba601416cf4!2sESGIS%20Annexe%20Avedji!5e0!3m2!1sfr!2stg!4v1786297098431!5m2!1sfr!2stg"  allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.412397388732!2d1.18141907291441!3d6.2092121267401135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1021584125c0882f%3A0x11e8cba601416cf4!2sESGIS%20Annexe%20Avedji!5e0!3m2!1sfr!2stg!4v1786297098431!5m2!1sfr!2stg"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="strict-origin-when-cross-origin"
+          className="w-full"
+        ></iframe>
       </div>
     </footer>
   );

@@ -71,7 +71,7 @@ export default function Navigation() {
   return (
     <>
       {/* Header Desktop */}
-      <header className="w-full flex items-center justify-between p-6 md:p-10 mx-auto font-nohemi-regular">
+      <header className="w-full flex items-center justify-between p-6 px-12 mx-auto font-nohemi-regular">
         <div className="avatar avatar-online">
           <div className="avatar avatar-online">
             <div className="w-24 rounded-full">

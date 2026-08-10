@@ -23,25 +23,21 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
   html {
     box-sizing: inherit;
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
-  
   body {
     font-family: var(--font-nohemi-regular), sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
   }
-  
   .portfolio-bg {
     position: relative;
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
   }
-  
   /* Grille fine en fond */
   .portfolio-bg::before {
     content: "";
@@ -54,7 +50,6 @@
     pointer-events: none;
     z-index: 0;
   }
-
   /* NOUVEAU : Effet de lumière interactive 
   .portfolio-bg::after {
     content: "";

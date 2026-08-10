@@ -21,8 +21,8 @@ export type ServiceType = {
 // --- Définition des données des services ---
 const services: ServiceType[] = [
   {
-    title: "UI/UX Design",
-    desc: "Création d'interfaces intuitives et de maquettes interactives centrées sur l'utilisateur.",
+    title: "Systèmes & Réseaux",
+    desc: "Windows, notions de Linux, environnement de développement et configuration de Serveurs et Ordinateur.",
     bgColor: "bg-[#EAC54F]", // Jaune
     textColor: "text-black",
     baseRotation: -10, // Penché vers la gauche
@@ -108,7 +108,7 @@ export function MagneticCard({
       ref={setRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={`relative w-92 ${service.bgColor} ${service.textColor} rounded-3xl p-8 shadow-2xl flex flex-col justify-between cursor-pointer border border-white/10 shrink-0 transition-shadow hover:shadow-white/5 font-nohemi-regular`}
+      className={`relative w-92 ${service.bgColor} ${service.textColor} rounded-3xl p-8 shadow-2xl flex flex-col justify-between items-center cursor-pointer border border-white/10 shrink-0 transition-shadow hover:shadow-white/5 font-nohemi-regular`}
     >
       {/* Le "point" noir / punaise style brutaliste */}
       <div className="absolute top-6 right-6 w-5 h-5 bg-black/40 rounded-full shadow-inner backdrop-blur-sm" />
@@ -166,7 +166,7 @@ export default function ServicesSection() {
   return (
     <section
       ref={sectionRef}
-      className="w-full min-h-screen py-32 overflow-hidden flex flex-col items-center justify-center font-sans"
+      className="w-full min-h-screen py-32 overflow-hidden flex flex-col items-center justify-center font-nohemi-regular"
     >
       {/* Conteneur Flex pour aligner les cartes côte à côte (l'éventail) */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 lg:-space-x-12 relative w-full px-4">
