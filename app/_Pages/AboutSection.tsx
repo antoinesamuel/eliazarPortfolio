@@ -128,7 +128,7 @@ export default function AboutSection() {
         </div>
 
         {/* CONTENU : Expériences & Formations */}
-        <div className="space-y-20 flex flex-col justify-start items-start w-full">
+        <div className="space-y-20 flex flex-col justify-between items-start w-full">
           {/* Section Expériences */}
           <div ref={experiencesRef} className="w-full">
             <h3 className="text-4xl md:text-5xl font-black mb-8 border-b-[3px] border-black pb-4 tracking-tight">
@@ -175,7 +175,8 @@ export default function AboutSection() {
                 </ul>
               </div>
             </div>
-            {/*
+          </div>
+          {/*
             <div className="flex flex-col md:flex-row gap-4 md:gap-16 pt-12">
               <div className="md:w-1/3 shrink-0">
                 <span className="text-[1.8rem] font-extrabold block">
@@ -196,158 +197,151 @@ export default function AboutSection() {
                           </div>
               */}
 
-            {/* Section Formations */}
-            <div ref={formationsRef} className="w-full">
-              <h3 className="text-4xl md:text-5xl font-black mb-8 border-b-[3px] border-black pb-4 tracking-tight">
-                Formations
-              </h3>
-              <div className="flex flex-col md:flex-row gap-4 md:gap-16 pt-4">
-                <div className="md:w-1/3 shrink-0">
-                  <span className="text-[1.8rem] font-extrabold block">
-                    2024 à Aujourd{"'"}hui
-                  </span>
-                </div>
-                <div className="md:w-2/3 space-y-3">
-                  <h4 className="text-[1.8rem] font-bold">
-                    Licence Professionnelle en Génie Logiciel
-                  </h4>
-                  <p className="text-gray-700 text-[1.5rem]  leading-relaxed">
-                    Cours à l{"'"}
-                    <span className="">
-                      <a
-                        href="https://www.esgis.org/"
-                        className="text-[#E67900]"
-                      >
-                        <Image
-                          src={EsgisLogo}
-                          alt="Logo de la Banque Atlantique"
-                          width={100}
-                          height={65}
-                          className="inline-block"
-                        />
-                      </a>
-                    </span>
-                    . Étude approfondie de l{"'"}architecture logicielle, de la
-                    sécurité informatique, de la modélisation de données
-                    complexes et du développement back-end avec Java (Spring
-                    Boot) et Python (Django).
-                  </p>
-                </div>
+          {/* Section Formations */}
+          <div ref={formationsRef} className="w-full">
+            <h3 className="text-4xl md:text-5xl font-black mb-8 border-b-[3px] border-black pb-4 tracking-tight">
+              Formations
+            </h3>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-16 pt-4 mb-5">
+              <div className="md:w-1/3 shrink-0">
+                <span className="text-[1.8rem] font-extrabold block">
+                  2024 à Aujourd{"'"}hui
+                </span>
               </div>
-              {/**Section Technologies */}
-              <div className="w-full">
-                <h3 className="text-4xl md:text-5xl font-black mb-8 border-b-[3px] border-black pb-4 tracking-tight">
-                  Education
-                </h3>
-                <div className="flex flex-col md:flex-row gap-4 md:gap-16 pt-4">
-                  <div className="md:w-1/3 shrink-0">
-                    <span className="text-[1.8rem] font-extrabold block">
-                      2021
-                    </span>
-                  </div>
-                  <div className="md:w-2/3 space-y-3">
-                    <h4 className="text-[1.8rem] font-bold">
-                      BAC2 Série D au Lycée la Référence , Ndjamena-Tchad 🇹🇩
-                    </h4>
-                  </div>
-                </div>
+              <div className="md:w-2/3 space-y-3">
+                <h4 className="text-[1.8rem] font-bold">
+                  Licence Professionnelle en Génie Logiciel
+                </h4>
+                <p className="text-gray-700 text-[1.5rem]  leading-relaxed">
+                  Cours à l{"'"}
+                  <span className="">
+                    <a href="https://www.esgis.org/" className="text-[#E67900]">
+                      <Image
+                        src={EsgisLogo}
+                        alt="Logo de la Banque Atlantique"
+                        width={100}
+                        height={65}
+                        className="inline-block"
+                      />
+                    </a>
+                  </span>
+                  . Étude approfondie de l{"'"}architecture logicielle, de la
+                  sécurité informatique, de la modélisation de données complexes
+                  et du développement back-end avec Java (Spring Boot) et Python
+                  (Django).
+                </p>
               </div>
             </div>
-
-            {/* COMPÉTENCES : Ce que je maitrise */}
-            <div className="mt-32 md:text-center">
-              <h3 className="text-5xl md:text-7xl font-black mb-12 tracking-tighter">
-                Mes Outils et Technologies
-              </h3>
-
-              <div
-                ref={skillsRef}
-                className="flex flex-wrap justify-center items-center gap-8 md:gap-12"
-              >
-                {/* React */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    alt="React"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
-                {/* Next.js */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                    alt="Next.js"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
-                {/* Tailwind CSS */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                    alt="Tailwind"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
-                {/* Python */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                    alt="Python"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
-
-                {/* JavaScript */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    alt="JavaScript"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
-                {/* Java */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                    alt="Java"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
-
-                {/* MySQL */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                    alt="MySQL"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
-
-                {/* Linux */}
-                <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                    alt="Linux"
-                    height={12}
-                    width={12}
-                    className="w-12 md:w-16 h-12 md:h-16"
-                  />
-                </div>
+          </div>
+          {/**Section Technologies */}
+          <div className="w-full">
+            <h3 className="text-4xl md:text-5xl font-black mb-8 border-b-[3px] border-black pb-4 tracking-tight">
+              Education
+            </h3>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-16 pt-4">
+              <div className="md:w-1/3 shrink-0">
+                <span className="text-[1.8rem] font-extrabold block">2021</span>
               </div>
+              <div className="md:w-2/3 space-y-3">
+                <h4 className="text-[1.8rem] font-bold">
+                  BAC2 Série D au Lycée la Référence , Ndjamena-Tchad 🇹🇩
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* COMPÉTENCES : Ce que je maitrise */}
+        <div className="mt-32 md:text-center">
+          <h3 className="text-5xl md:text-7xl font-black mb-12 tracking-tighter">
+            Mes Outils et Technologies
+          </h3>
+
+          <div
+            ref={skillsRef}
+            className="flex flex-wrap justify-center items-center gap-8 md:gap-12"
+          >
+            {/* React */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
+            </div>
+            {/* Next.js */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="Next.js"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
+            </div>
+            {/* Tailwind CSS */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
+            </div>
+            {/* Python */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
+            </div>
+
+            {/* JavaScript */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
+            </div>
+            {/* Java */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
+            </div>
+
+            {/* MySQL */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
+            </div>
+
+            {/* Linux */}
+            <div className="w-20 h-20 md:w-28 md:h-28 bg-white rounded-3xl shadow-sm flex items-center justify-center border border-gray-200">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                alt="Linux"
+                height={12}
+                width={12}
+                className="w-12 md:w-16 h-12 md:h-16"
+              />
             </div>
           </div>
         </div>
