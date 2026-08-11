@@ -93,7 +93,16 @@ export default function HomePage() {
             {/*
             <PrimaryButton label="Projets" />
             */}
-            <PrimaryButton label="Me Connecter" href="#Contacts" />
+            <PrimaryButton
+              label="Mes Projets"
+              href="#Contacts"
+              className="hidden md:flex"
+            />
+            <PrimaryButton
+              label="Me Contacter"
+              href="#Contacts"
+              className="md:hidden flex"
+            />
             <PrimaryButton
               label="Mon CV"
               href="https://drive.google.com/file/d/1UJBQG5gwlgzFYSxm7wVazmWcxwiwEcMB/view"

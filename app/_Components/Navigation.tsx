@@ -84,7 +84,11 @@ export default function Navigation() {
           <NavLink href="#About" label="About" />
           <NavLink href="#Projects" label="Projects" />
           <NavLink href="#Contacts" label="Contacts" />
-          <PrimaryButton label="Contacter Moi" className="rounded-full" />
+          <PrimaryButton
+            label="Contacter Moi"
+            className="rounded-full"
+            href="#Contacts"
+          />
         </nav>
       </header>
 
