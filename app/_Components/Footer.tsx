@@ -42,7 +42,7 @@ export function Footer() {
 
           {/* Bouton Github */}
           <a
-            href="https://github.com/lorem"
+            href="https://github.com/Eliazar-Layebe"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 group hover:-translate-y-1 transition-transform duration-300"

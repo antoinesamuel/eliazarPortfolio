@@ -22,7 +22,9 @@ export default function ContactSection() {
   });
 
   // Met à jour l'état à chaque frappe au clavier
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -34,10 +36,10 @@ export default function ContactSection() {
     e.preventDefault();
     if (!formData.message) return alert("Veuillez écrire un message.");
 
-    const phoneNumber = "22800000000"; // Remplace par ton vrai numéro
+    const phoneNumber = "+22870126138"; // Remplace par ton vrai numéro
     const text = `Bonjour Eliazar, je suis ${formData.name}.\n\nObjet: ${formData.subject}\n\n${formData.message}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-    
+
     window.open(url, "_blank");
   };
 
@@ -46,11 +48,11 @@ export default function ContactSection() {
     e.preventDefault();
     if (!formData.message) return alert("Veuillez écrire un message.");
 
-    const email = "layebeeliazar@gmail.com"; // Remplace par ton email
+    const email = "elilayebe@gmail.com"; // Remplace par ton email
     const subject = formData.subject || "Nouveau contact depuis le Portfolio";
     const body = `Bonjour Eliazar,\n\nJe suis ${formData.name}.\n\n${formData.message}`;
     const url = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
+
     window.location.href = url;
   };
 
@@ -69,37 +71,39 @@ export default function ContactSection() {
             trigger: sectionRef.current,
             start: "top 70%",
           },
-        }
+        },
       );
     }, sectionRef);
     return () => ctx.revert();
   }, []);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="w-full min-h-screen py-32 flex flex-col md:flex-row justify-between items-center px-20 relative z-10 font-nohemi-regular"
       id="Contacts"
     >
       <div className="mb-16 text-center md:text-start flex flex-col md:justify-start">
-        <h2 
-          className="text-[6rem] font-black text-white tracking-tighter mb-4"
-        >
-          Un idée<br/> de Projet <span className="text-red-700">?</span>
+        <h2 className="text-[6rem] font-black text-white tracking-tighter mb-4">
+          Un idée
+          <br /> de Projet <span className="text-red-700">?</span>
         </h2>
         <p className="text-gray-400 text-lg md:text-xl font-nohemi-regular">
-          Remplissez le formulaire et envoyez-le directement via votre canal favori.
+          Remplissez le formulaire et envoyez-le directement via votre canal
+          favori.
         </p>
       </div>
 
-      <div 
+      <div
         ref={formRef}
         className="w-full max-w-2xl bg-[#111] border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl backdrop-blur-md"
       >
         <form className="flex flex-col gap-6">
           {/* Champ Nom */}
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold text-gray-300 uppercase tracking-wider">Votre Nom</label>
+            <label className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
+              Votre Nom
+            </label>
             <input
               type="text"
               name="name"
@@ -112,7 +116,9 @@ export default function ContactSection() {
 
           {/* Champ Objet */}
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold text-gray-300 uppercase tracking-wider">Sujet</label>
+            <label className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
+              Sujet
+            </label>
             <input
               type="text"
               name="subject"
@@ -125,7 +131,9 @@ export default function ContactSection() {
 
           {/* Champ Message */}
           <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold text-gray-300 uppercase tracking-wider">Message</label>
+            <label className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
+              Message
+            </label>
             <textarea
               name="message"
               value={formData.message}
@@ -138,7 +146,6 @@ export default function ContactSection() {
 
           {/* Boutons d'envoi interactifs */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6 md:gap-8">
-            
             {/* Bouton Gmail / Email */}
             <button
               type="button"
@@ -166,7 +173,6 @@ export default function ContactSection() {
                 Whatsapp
               </span>
             </button>
-
           </div>
         </form>
       </div>

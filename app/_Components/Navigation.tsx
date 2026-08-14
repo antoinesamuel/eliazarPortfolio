@@ -141,20 +141,24 @@ export default function Navigation() {
 
         <div className="flex items-center font-nohemi-medium justify-between text-[1.25rem] pt-6 border-t border-[#3C3737] mobile-nav-item">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/eliazar-layebe-214b23429/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Linkedin
           </a>
           <a
-            href="https://github.com/antoinesamuel"
+            href="https://github.com/Eliazar-Layebe"
             target="_blank"
             rel="noopener noreferrer"
           >
             Github
           </a>
-          <a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://wa.me/+22870126138"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Whatsapp
           </a>
         </div>

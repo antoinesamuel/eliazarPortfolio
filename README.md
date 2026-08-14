@@ -47,4 +47,3 @@ eliazarPortfolio/
 ![Capture d'écran](/public/Images/five.png)
 ![Capture d'écran](/public/Images/six.png)
 ![Capture d'écran](/public/Images/seven.png)
-
