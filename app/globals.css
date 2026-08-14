@@ -38,7 +38,6 @@
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
   }
-  /* Grille fine en fond */
   .portfolio-bg::before {
     content: "";
     position: absolute;
@@ -62,6 +61,5 @@
     
     pointer-events: none;
     z-index: 1;
-  }
-      */
+  }*/
 }

@@ -58,7 +58,7 @@ export default function Loader({ onComplete }: LoaderProps) {
   return (
     <div
       ref={loaderRef}
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black text-white select-none pointer-events-none"
+      className="fixed inset-0 z-9999 font-nohemi-regular flex items-center justify-center bg-black text-white select-none pointer-events-none"
     >
       <div
         ref={textRef}

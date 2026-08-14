@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image"; // Optionnel : à remplacer par <img> si ce n'est pas du Next.js
 import { SiGmail } from "react-icons/si";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
-import avatar from "@/app/favicon.ico";
+import logo from "@/public/logo.png";
 
 export function Footer() {
   return (
@@ -12,10 +12,10 @@ export function Footer() {
       <div className="flex justify-between items-center p-4">
         {/* Section Gauche : Avatar */}
         <div className="shrink-0">
-          <div className="w-18 h-18 rounded-full border border-gray-200 shadow-sm relative overflow-hidden">
+          <div className="w-24 h-24 rounded-full shadow-sm relative overflow-hidden">
             {/* Remplacez '/votre-avatar.png' par le bon chemin dans votre dossier public */}
             <Image
-              src={avatar}
+              src={logo}
               alt="Logo de Layebe Eliazar"
               fill
               className="w-full h-full object-cover"

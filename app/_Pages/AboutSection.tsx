@@ -161,7 +161,7 @@ export default function AboutSection() {
                 </p>
                 <p />
                 <h1 className="">La préparation et la qualité des données :</h1>
-                <ul className="list text-[1.5rem] list-disc text-white">
+                <ul className="list text-[1.5rem] list-disc text-white p-4">
                   <li className="list-item">
                     L{"'"}analyse et la valorisation de données
                   </li>

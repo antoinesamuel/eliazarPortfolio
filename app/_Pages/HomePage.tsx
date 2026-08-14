@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
-import photo from "@/public/Marcus.jpg";
+import photo from "@/public/Images/LayebeEliazar.jpeg";
 import { profile } from "console";
 import PrimaryButton from "@/app/_Components/PrimaryButton";
 

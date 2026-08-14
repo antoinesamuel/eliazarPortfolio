@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import profil from "@/app/favicon.ico";
+import profil from "@/public/logo.png";
 import NavLink from "./NavLink";
 import PrimaryButton from "./PrimaryButton";
 
@@ -74,7 +74,7 @@ export default function Navigation() {
       <header className="w-full flex items-center justify-between p-6 px-12 mx-auto font-nohemi-regular">
         <div className="avatar avatar-online">
           <div className="avatar avatar-online">
-            <div className="w-24 rounded-full">
+            <div className="w-28 rounded-full">
               <Image src={profil} alt="mini photo d'Eliazar" />
             </div>
           </div>

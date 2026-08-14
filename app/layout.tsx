@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     images: ["https://eliazar-portfolio-two.vercel.app/Images/first.png"],
   },
   icons: {
-    icon: "./Philippos.jpg",
+    icon: "./logo.png",
   },
 };
 
