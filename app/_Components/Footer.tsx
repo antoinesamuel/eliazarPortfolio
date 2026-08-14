@@ -27,7 +27,7 @@ export function Footer() {
         <div className="flex gap-6 md:gap-8">
           {/* Bouton Gmail */}
           <a
-            href="mailto:elilayebe@gmail.com"
+            href="mailto:layebeeliazar20@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 group hover:-translate-y-1 transition-transform duration-300"

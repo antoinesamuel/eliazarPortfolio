@@ -48,7 +48,7 @@ export default function ContactSection() {
     e.preventDefault();
     if (!formData.message) return alert("Veuillez écrire un message.");
 
-    const email = "elilayebe@gmail.com"; // Remplace par ton email
+    const email = "layebeeliazar20@gmail.com"; // Remplace par ton email
     const subject = formData.subject || "Nouveau contact depuis le Portfolio";
     const body = `Bonjour Eliazar,\n\nJe suis ${formData.name}.\n\n${formData.message}`;
     const url = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
